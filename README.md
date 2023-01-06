@@ -1,4 +1,4 @@
-# Frontend Mentor - News homepage Collab
+# Frontend Mentor - News homepage Collab with Eric and Maia
 
 ![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)
 
