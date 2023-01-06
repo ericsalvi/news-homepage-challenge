@@ -1,4 +1,4 @@
-# Frontend Mentor - News homepage
+# Frontend Mentor - News homepage Collab
 
 ![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)
 
