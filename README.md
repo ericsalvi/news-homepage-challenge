@@ -1,4 +1,4 @@
-# Frontend Mentor - News homepage Collab with Eric and Maia
+# Frontend Mentor - News homepage Collab with Eric and Maia from HubSpot
 
 ![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)
 
