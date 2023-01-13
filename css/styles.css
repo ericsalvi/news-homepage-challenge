@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 *,
 *:before,
 *:after {
@@ -6,15 +7,75 @@
   padding: 0;
 }
 
-@font-face {
-  font-family: "Inter";
-  src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
-}
 body {
   font-family: "Inter", sans-serif;
   font-size: 15px;
+  padding: 1rem;
 }
-
-ul li {
+body header {
+  display: flex;
+}
+body header ul {
+  display: none;
+}
+body main {
+  display: grid;
+  gap: 30px;
+}
+body main section.hero img {
+  width: 100%;
+}
+body main section.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: hsl(240deg, 100%, 5%);
+}
+body main section.hero p {
+  color: hsl(236deg, 13%, 42%);
+}
+body main section.hero button {
+  background: hsl(5deg, 85%, 63%);
+  color: hsl(36deg, 100%, 99%);
+  text-transform: uppercase;
+  border: 0;
+  padding: 1rem 1.5rem;
+}
+body main aside {
+  background: hsl(240deg, 100%, 5%);
+  padding: 1rem;
+}
+body main aside h2 {
+  color: hsl(35deg, 77%, 62%);
+}
+body main aside ul li {
   list-style: none;
+  border-bottom: 1px solid hsl(236deg, 13%, 42%);
+}
+body main aside ul li h3 {
+  color: hsl(36deg, 100%, 99%);
+}
+body main aside ul li p {
+  color: hsl(236deg, 13%, 42%);
+}
+body main aside ul li:last-child {
+  border-bottom: none;
+}
+body main section.cards {
+  display: grid;
+  gap: 30px;
+}
+body main section.cards figure {
+  display: flex;
+}
+body main section.cards figure figcaption em {
+  color: hsl(233deg, 8%, 79%);
+  font-size: 2rem;
+  font-style: normal;
+}
+body main section.cards figure figcaption h4 {
+  color: hsl(240deg, 100%, 5%);
+}
+body main section.cards figure figcaption p {
+  color: hsl(236deg, 13%, 42%);
+
 }/*# sourceMappingURL=styles.css.map */

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 @import "variables";
 
 *,
@@ -8,17 +9,85 @@
   padding: 0;
 }
 
-@font-face {
-  font-family: "Inter";
-  src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf")
-    format("truetype");
-}
+// @font-face {
+//   font-family: "Inter";
+//   src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf")
+//     format("truetype");
+// }
 
 body {
   font-family: "Inter", sans-serif;
   font-size: 15px;
-}
-
-ul li {
-  list-style: none;
-}
+  padding: 1rem;
+  header {
+    display: flex;
+    ul {
+      display: none;
+    }
+  }
+  main {
+    display: grid;
+    gap: $gap;
+    section.hero {
+      img {
+        width: 100%;
+      }
+      h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        color: $veryDarkBlue;
+      }
+      p {
+        color: $darkGrayishBlue;
+      }
+      button {
+        background: $softRed;
+        color: $offWhite;
+        text-transform: uppercase;
+        border: 0;
+        padding: 1rem 1.5rem;
+      }
+    }
+    aside {
+      background: $veryDarkBlue;
+      padding: 1rem;
+      h2 {
+        color: $softOrange;
+      }
+      ul {
+        li {
+          list-style: none;
+          border-bottom: 1px solid $darkGrayishBlue;
+          h3 {
+            color: $offWhite;
+          }
+          p {
+            color: $darkGrayishBlue;
+          }
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    section.cards {
+      display: grid;
+      gap: $gap;
+      figure {
+        display: flex;
+        figcaption {
+          em {
+            color: $grayishBlue;
+            font-size: 2rem;
+            font-style: normal;
+          }
+          h4 {
+            color: $veryDarkBlue;
+          }
+          p {
+            color: $darkGrayishBlue;
+          }
+        }
+      }
+    }
+  }
