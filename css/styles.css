@@ -14,55 +14,73 @@ body {
 }
 body header {
   display: flex;
+  height: 72px;
+  align-items: center;
+}
+body header img {
+  max-height: 28px;
+  width: auto;
 }
 body header ul {
   display: none;
 }
 body main {
   display: grid;
-  gap: 30px;
+  gap: 4rem;
 }
 body main section.hero img {
   width: 100%;
 }
 body main section.hero h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
+  line-height: 1;
   color: hsl(240deg, 100%, 5%);
+  margin: 1.333rem 0 1rem;
 }
 body main section.hero p {
+  line-height: 1.75;
   color: hsl(236deg, 13%, 42%);
+  margin-bottom: 1.5rem;
 }
 body main section.hero button {
   background: hsl(5deg, 85%, 63%);
   color: hsl(36deg, 100%, 99%);
   text-transform: uppercase;
+  font-size: 0.933rem;
+  letter-spacing: 4px;
   border: 0;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
 }
 body main aside {
   background: hsl(240deg, 100%, 5%);
-  padding: 1rem;
+  padding: 1.5rem;
 }
 body main aside h2 {
   color: hsl(35deg, 77%, 62%);
+  font-size: 2rem;
 }
 body main aside ul li {
   list-style: none;
   border-bottom: 1px solid hsl(236deg, 13%, 42%);
+  padding: 1.5rem 0;
 }
 body main aside ul li h3 {
   color: hsl(36deg, 100%, 99%);
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
 }
 body main aside ul li p {
   color: hsl(236deg, 13%, 42%);
+  line-height: 2;
 }
 body main aside ul li:last-child {
   border-bottom: none;
+  padding-bottom: 0;
 }
 body main section.cards {
   display: grid;
-  gap: 30px;
+  gap: 4rem;
 }
 body main section.cards figure {
   display: flex;
