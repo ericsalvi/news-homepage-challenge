@@ -19,7 +19,7 @@
 body {
   font-family: "Inter", sans-serif;
   font-size: 15px;
-  padding: 1rem;
+  padding: 1rem 1rem 4rem;
   header {
     display: flex;
     height: 72px;
@@ -63,7 +63,7 @@ body {
     }
     aside {
       background: $veryDarkBlue;
-      padding: 1.5rem;
+      padding: 1.333rem;
       h2 {
         color: $softOrange;
         font-size: 2rem;
@@ -72,15 +72,16 @@ body {
         li {
           list-style: none;
           border-bottom: 1px solid $darkGrayishBlue;
-          padding: 1.5rem 0;
+          padding: 2rem 0 1.75rem;
           h3 {
             color: $offWhite;
             font-size: 1.2rem;
+            letter-spacing: 0.5px;
             padding-bottom: 0.5rem;
           }
           p {
             color: $darkGrayishBlue;
-            line-height: 2;
+            line-height: 1.8;
           }
           &:last-child {
             border-bottom: none;
@@ -91,20 +92,35 @@ body {
     }
     section.cards {
       display: grid;
-      gap: $gap;
+      gap: calc($gap/2);
       figure {
         display: flex;
+        gap: calc($gap/3);
+        div {
+          flex: 0 1 30%;
+          img {
+            width: 100%;
+          }
+        }
         figcaption {
+          flex: 0 1 70%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
           em {
             color: $grayishBlue;
             font-size: 2rem;
             font-style: normal;
+            font-weight: 700;
           }
           h4 {
             color: $veryDarkBlue;
+            font-size: 1.1rem;
+            font-weight: 800;
           }
           p {
             color: $darkGrayishBlue;
+            line-height: 1.5;
           }
         }
       }

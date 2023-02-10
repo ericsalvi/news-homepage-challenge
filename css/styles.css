@@ -14,7 +14,7 @@
 body {
   font-family: "Inter", sans-serif;
   font-size: 15px;
-  padding: 1rem;
+  padding: 1rem 1rem 4rem;
 }
 body header {
   display: flex;
@@ -58,7 +58,7 @@ body main section.hero button {
 }
 body main aside {
   background: hsl(240deg, 100%, 5%);
-  padding: 1.5rem;
+  padding: 1.333rem;
 }
 body main aside h2 {
   color: hsl(35deg, 77%, 62%);
@@ -67,16 +67,17 @@ body main aside h2 {
 body main aside ul li {
   list-style: none;
   border-bottom: 1px solid hsl(236deg, 13%, 42%);
-  padding: 1.5rem 0;
+  padding: 2rem 0 1.75rem;
 }
 body main aside ul li h3 {
   color: hsl(36deg, 100%, 99%);
   font-size: 1.2rem;
+  letter-spacing: 0.5px;
   padding-bottom: 0.5rem;
 }
 body main aside ul li p {
   color: hsl(236deg, 13%, 42%);
-  line-height: 2;
+  line-height: 1.8;
 }
 body main aside ul li:last-child {
   border-bottom: none;
@@ -84,19 +85,36 @@ body main aside ul li:last-child {
 }
 body main section.cards {
   display: grid;
-  gap: 4rem;
+  gap: 2rem;
 }
 body main section.cards figure {
   display: flex;
+  gap: 1.3333333333rem;
+}
+body main section.cards figure div {
+  flex: 0 1 30%;
+}
+body main section.cards figure div img {
+  width: 100%;
+}
+body main section.cards figure figcaption {
+  flex: 0 1 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 body main section.cards figure figcaption em {
   color: hsl(233deg, 8%, 79%);
   font-size: 2rem;
   font-style: normal;
+  font-weight: 700;
 }
 body main section.cards figure figcaption h4 {
   color: hsl(240deg, 100%, 5%);
+  font-size: 1.1rem;
+  font-weight: 800;
 }
 body main section.cards figure figcaption p {
   color: hsl(236deg, 13%, 42%);
+  line-height: 1.5;
 }/*# sourceMappingURL=styles.css.map */
