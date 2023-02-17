@@ -16,17 +16,51 @@ body {
   font-size: 15px;
   padding: 1rem 1rem 4rem;
 }
+body.open {
+  filter: grayscale(50%);
+}
+body.open nav {
+  display: flex;
+}
 body header {
   display: flex;
-  height: 72px;
+  height: 52px;
   align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
 }
-body header img {
+body header img.logo {
   max-height: 28px;
   width: auto;
 }
-body header ul {
+body header img.menu-open {
+  display: block;
+}
+body header nav {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 66vw;
+  padding: 1rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 8rem;
   display: none;
+}
+body header nav::after {
+  content: "";
+  background-color: hsla(0deg, 0%, 0%, 0.3);
+}
+body header nav a {
+  color: hsl(240deg, 100%, 5%);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+body header nav a:hover {
+  color: hsl(5deg, 85%, 63%);
 }
 body main {
   display: grid;
@@ -55,6 +89,11 @@ body main section.hero button {
   letter-spacing: 4px;
   border: 0;
   padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+body main section.hero button:hover {
+  background: hsl(240deg, 100%, 5%);
 }
 body main aside {
   background: hsl(240deg, 100%, 5%);
@@ -68,6 +107,10 @@ body main aside ul li {
   list-style: none;
   border-bottom: 1px solid hsl(236deg, 13%, 42%);
   padding: 2rem 0 1.75rem;
+  cursor: pointer;
+}
+body main aside ul li:hover h3 {
+  color: hsl(35deg, 77%, 62%);
 }
 body main aside ul li h3 {
   color: hsl(36deg, 100%, 99%);
@@ -102,6 +145,10 @@ body main section.cards figure figcaption {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
+}
+body main section.cards figure figcaption:hover h4 {
+  color: hsl(5deg, 85%, 63%);
 }
 body main section.cards figure figcaption em {
   color: hsl(233deg, 8%, 79%);
