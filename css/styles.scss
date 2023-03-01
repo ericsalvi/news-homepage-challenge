@@ -21,10 +21,18 @@ body {
   font-size: 15px;
   padding: 1rem 1rem 4rem;
   &.open {
-    -webkit-filter: grayscale(50%);
-    filter: grayscale(50%);
+    overflow: hidden;
     nav {
       display: flex;
+    }
+    .menu-backdrop {
+      visibility: visible;
+    }
+    img.menu-open {
+      display: none;
+    }
+    img.menu-close {
+      display: block;
     }
   }
   header {
@@ -39,6 +47,12 @@ body {
     }
     img.menu-open {
       display: block;
+      position: relative;
+      z-index: 3;
+    }
+    img.menu-close {
+      display: none;
+      z-index: 3;
     }
     nav {
       position: absolute;
@@ -53,10 +67,7 @@ body {
       gap: calc($gap/2);
       padding-top: 8rem;
       display: none;
-      &::after {
-        content: "";
-        background-color: hsla(0, 0, 0, 0.3);
-      }
+      z-index: 2;
       a {
         color: $veryDarkBlue;
         text-decoration: none;
@@ -65,6 +76,12 @@ body {
           color: $softRed;
         }
       }
+    }
+    .menu-backdrop {
+      position: absolute;
+      inset: 0;
+      background: hsla(240, 100%, 5%, 0.5);
+      visibility: hidden;
     }
   }
   main {
@@ -175,3 +192,5 @@ body {
     }
   }
 }
+
+@import "media";

@@ -1,0 +1,57 @@
+@media (min-width: 768px) {
+  html {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    body {
+      max-width: 1110px;
+      header {
+        nav {
+          position: unset;
+          display: flex;
+          flex-direction: row;
+          padding: unset;
+          width: unset;
+          a {
+            color: $darkGrayishBlue;
+            font-size: 1rem;
+            font-weight: 250;
+          }
+        }
+        img.menu-open {
+          display: none;
+        }
+      }
+      main {
+        grid-template-areas:
+          "hero hero sidebar"
+          "hero hero sidebar"
+          "cards cards cards";
+        gap: calc($gap / 2);
+        section.hero {
+          display: grid;
+          grid-area: hero;
+          grid-template-areas:
+            "hero-image hero-image"
+            "title description";
+          picture {
+            grid-area: hero-image;
+          }
+          h1 {
+            grid-area: title;
+          }
+          section.description {
+            grid-area: description;
+          }
+        }
+        aside {
+          grid-area: sidebar;
+        }
+        section.cards {
+          grid-area: cards;
+          display: flex;
+        }
+      }
+    }
+  }
+}

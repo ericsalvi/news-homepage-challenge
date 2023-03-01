@@ -1,6 +1,11 @@
 const body = document.querySelector("body");
-const hamburger = document.querySelector(".menu-open");
+const menuOpen = document.querySelector(".menu-open");
+const menuClose = document.querySelector(".menu-close");
 
-hamburger.addEventListener("click", () => {
+menuOpen.addEventListener("click", () => {
+  body.classList.toggle("open");
+});
+
+menuClose.addEventListener("click", () => {
   body.classList.toggle("open");
 });
