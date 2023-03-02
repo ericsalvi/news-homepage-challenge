@@ -2,6 +2,8 @@
 
 ![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)
 
+[Current GitHub Page Design](https://ericsalvi.github.io/news-homepage-challenge/)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
