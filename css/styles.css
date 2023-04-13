@@ -190,13 +190,13 @@ body main section.cards figure figcaption p {
     display: grid;
     place-content: center;
     min-height: 100vh;
+    margin-bottom: 4rem;
   }
   html body {
-    max-width: 1110px;
-    padding: 0;
+    max-width: 1142px;
   }
   html body header {
-    margin-bottom: 3rem;
+    margin: 4rem 0 3rem;
   }
   html body header img.logo {
     max-height: 40px;
@@ -221,7 +221,7 @@ body main section.cards figure figcaption p {
     grid-template-areas: "hero hero sidebar" "cards cards cards";
     row-gap: 4rem;
     -moz-column-gap: 2rem;
-         column-gap: 2rem;
+    column-gap: 2rem;
   }
   html body main section.hero {
     display: grid;
@@ -238,6 +238,9 @@ body main section.cards figure figcaption p {
     font-size: 3.33rem;
     letter-spacing: 1.5px;
     margin: 0;
+  }
+  html body main section.hero p {
+    line-height: 1.6;
   }
   html body main section.hero section.description {
     grid-area: description;
@@ -256,5 +259,10 @@ body main section.cards figure figcaption p {
   html body main section.cards {
     grid-area: cards;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  html body main section.hero {
+    grid-template-areas: "hero-image hero-image" "title title" "description description";
   }
 }/*# sourceMappingURL=styles.css.map */

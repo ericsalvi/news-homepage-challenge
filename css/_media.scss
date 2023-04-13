@@ -3,11 +3,11 @@
     display: grid;
     place-content: center;
     min-height: 100vh;
+    margin-bottom: 4rem;
     body {
-      max-width: 1110px;
-      padding: 0;
+      max-width: 1142px;
       header {
-        margin-bottom: 3rem;
+        margin: 4rem 0 3rem;
         img.logo {
           max-height: 40px;
         }
@@ -33,6 +33,7 @@
           "hero hero sidebar"
           "cards cards cards";
         row-gap: $gap;
+        -moz-column-gap: calc($gap / 2);
         column-gap: calc($gap / 2);
         section.hero {
           display: grid;
@@ -50,6 +51,9 @@
             font-size: 3.33rem;
             letter-spacing: 1.5px;
             margin: 0;
+          }
+          p {
+            line-height: 1.6;
           }
           section.description {
             grid-area: description;
@@ -73,6 +77,21 @@
         section.cards {
           grid-area: cards;
           grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    body {
+      main {
+        section.hero {
+          grid-template-areas:
+            "hero-image hero-image"
+            "title title"
+            "description description";
         }
       }
     }
