@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FrontendMentor.io]()
+- Solution URL: [FrontendMentor.io](https://www.frontendmentor.io/solutions/collab-solution-with-maia-for-the-news-homepage-challenge-z-ymOUvayM)
 - Live Site URL: [https://ericsalvi.github.io/news-homepage-challenge/](https://ericsalvi.github.io/news-homepage-challenge/)
 
 ## My process
