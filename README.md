@@ -42,6 +42,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS variables
 - Variable Google fonts
+- SCSS
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
@@ -53,7 +54,7 @@ This particular project was a collaboration with [@maiaflow](https://github.com/
 
 ### Continued development
 
-I am looking forward to doing more collaborations with [@maiaflow](https://github.com/maiaflow).
+I am looking forward to doing more collaborations with Maia.
 
 ## Author
 
